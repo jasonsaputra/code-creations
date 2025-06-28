@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Portfolio | Code Creations',
   description: 'Personal portfolio showcasing my skills and projects',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon-black.ico',
   },
 };
 
