@@ -38,4 +38,3 @@ next-env.d.ts
 # folders
 components/ui/*
 !components/ui/*.tsx
-hooks/use-toast.ts
