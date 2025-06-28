@@ -1,4 +1,4 @@
-import { CodeIcon, PenToolIcon, LayersIcon, GlobeIcon } from 'lucide-react';
+import { CodeIcon, PenToolIcon, GlobeIcon } from 'lucide-react';
 
 export type Skill = {
   name: string;
@@ -40,41 +40,42 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: 'project-1',
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce platform built with Next.js and TypeScript',
-    longDescription: 'This project is a fully featured e-commerce platform with product listings, shopping cart, user authentication, and payment integration. Built with Next.js, TypeScript, and TailwindCSS for the frontend, with a Node.js backend and MongoDB database.',
-    tags: ['Next.js', 'TypeScript', 'MongoDB', 'Node.js'],
-    image: 'https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg',
+    title: 'Cranium Property',
+    description: 'A responsive property listing website',
+    longDescription: 'A responsive property listing website built using ReactJS, designed to display property information effectively and provide a seamless user experience',
+    tags: ['React', 'Redux', 'CSS', 'PostgreSQL'],
+    image: '/images/property-listing.png',
     link: 'https://example.com',
     github: 'https://github.com',
   },
   {
     id: 'project-2',
-    title: 'Task Management App',
-    description: 'A productivity app for managing tasks and projects',
-    longDescription: 'A collaborative task management application designed to help teams organize and track their work. Features include task creation, assignment, due dates, comments, file attachments, and real-time updates.',
-    tags: ['React', 'Redux', 'Express', 'PostgreSQL'],
-    image: 'https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg',
+    title: 'AnimeVerse',
+    description: 'A simple website for discovering and watching anime online',
+    longDescription: 'AnimeVerse is a user-friendly platform that allows users to browse, search, and watch anime shows. The website provides an organized anime catalog, detailed show pages, and a smooth viewing experience—similar to common anime streaming sites.',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'Phosphor Icons', 'Lucide React'],
+    image: '/images/animeverse.png',
     link: 'https://example.com',
     github: 'https://github.com',
   },
+
   {
     id: 'project-3',
-    title: 'AI Image Generator',
-    description: 'An application that generates images using AI',
-    longDescription: 'This project leverages OpenAI\'s DALL-E API to generate images from text descriptions. Users can enter prompts and receive AI-generated images, which they can save and share with others. Built with React and Node.js.',
-    tags: ['React', 'Node.js', 'OpenAI API', 'AWS'],
-    image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
+    title: 'Vehicle Management System',
+    description: 'A CMS for managing vehicle listings and bookings by partners',
+    longDescription: 'A modern and efficient CMS designed for partner businesses to manage vehicle listings, bookings, and other essential details for the user-facing rental platform. Built with React.js, Tailwind CSS, and enhanced by the DaisyUI component library.',
+    tags: ['React', 'PostgreSQL', 'Tailwind CSS', 'Daisy UI'],
+    image: '/images/ezdrive-cms.png',
     link: 'https://example.com',
     github: 'https://github.com',
   },
   {
     id: 'project-4',
-    title: 'Personal Finance Dashboard',
-    description: 'A dashboard for tracking personal finances and investments',
-    longDescription: 'A comprehensive personal finance dashboard that helps users track expenses, income, investments, and financial goals. Features include data visualization, budget planning, and transaction categorization.',
-    tags: ['Vue.js', 'Chart.js', 'Firebase', 'Tailwind'],
-    image: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg',
+    title: 'EZDrive',
+    description: 'A web app for browsing, searching, and booking rental vehicles',
+    longDescription: 'A user friendly web application designed for customers to browse, search, and book vehicles for rent. Built with React.js and MUI for a sleek and modern.',
+    tags: ['React', 'Redux', 'PostgreSQL', 'MUI'],
+    image: '/images/ezdrive.png',
     link: 'https://example.com',
     github: 'https://github.com',
   },
@@ -96,9 +97,4 @@ export const services: Service[] = [
     description: 'Building custom web applications tailored to specific business needs and requirements.',
     icon: GlobeIcon,
   },
-  // {
-  //   title: '',
-  //   description: '',
-  //   icon: LayersIcon,
-  // },
 ];

@@ -6,6 +6,22 @@ import { Button } from '@/components/ui/button';
 import { ChevronRight, Download } from 'lucide-react';
 import { services } from '@/lib/data';
 
+type Stat = {
+  value: string;
+  label: string;
+};
+
+const descriptions = [
+  "I'm a passionate developer with a strong interest in building intuitive and engaging digital experiences. My journey in technology started during my college years, and since then, I've been committed to continuous learning and creating meaningful projects.",
+  "While my main focus is developing modern frontend applications using React, Next.js, and TypeScript, I also enjoy exploring the creative side of technology—merging technical expertise with a good sense of visual design.",
+] as string[];
+
+
+const stats: Stat[] = [
+  { value: '2+', label: 'Years Experience' },
+  { value: '5+', label: 'Projects Completed' },
+];
+
 export function About() {
   return (
     <section id="about" className="py-16 md:py-26 relative overflow-hidden">      
@@ -50,24 +66,18 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold mb-4">Web Developer</h3>
-            <p className="text-muted-foreground mb-6">
-              I'm a passionate developer with a strong interest in building intuitive and engaging digital experiences.
-              My journey in technology started during my college years, and since then, I've been committed to continuous learning and creating meaningful projects.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              While my main focus is developing modern frontend applications using React, Next.js, and TypeScript,
-              I also enjoy exploring the creative side of technology—merging technical expertise with a good sense of visual design.
-            </p>
-           
+            {descriptions.map((desc, idx) => (
+              <p className="text-muted-foreground mb-6" key={idx}>
+                {desc}
+              </p>
+            ))}
             <div className="flex flex-wrap gap-6 mb-8">
-              <div>
-                <h4 className="font-bold text-lg">2+</h4>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-lg">5+</h4>
-                <p className="text-sm text-muted-foreground">Projects Completed</p>
-              </div>
+              {stats.map((stat) => (
+                <div key={stat.label}>
+                  <h4 className="font-bold text-lg">{stat.value}</h4>
+                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
             </div>
             
             <div className="flex flex-wrap gap-4">
