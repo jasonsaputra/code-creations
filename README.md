@@ -1,9 +1,29 @@
-For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.
+# 🚀 Jason Saputra — Personal Portfolio
 
-When using client-side hooks (useState and useEffect) in a component that's being treated as a Server Component by Next.js, always add the "use client" directive at the top of the file.
+A modern and responsive personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**.  
+This site showcases my projects, skills, and services as a tech enthusiast passionate about both development and design.
 
-Do not write code that will trigger this error: "Warning: Extra attributes from the server: %s%s""class,style"
+## 🌐 (https://jasons-work.vercel.app/)
 
-By default, this template supports JSX syntax with Tailwind CSS classes, the shadcn/ui library, React hooks, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
+---
 
-Use icons from lucide-react for logos.
+## ✨ Features
+
+- ⚡ Fully responsive design for all screen sizes
+- 🎨 Clean UI with smooth animations using **Framer Motion**
+- 🌙 Dark mode friendly (if applicable)
+- 💼 Project showcase with modal previews
+- 📇 About section highlighting background and interests
+- 📬 Contact section with scroll navigation
+- 🔗 Social links and call-to-action buttons
+
+---
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
