@@ -10,8 +10,8 @@ import { Button } from '@/components/ui/button';
 const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
+  // { name: 'Skills', href: '#skills' },
+  // { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -43,7 +43,7 @@ export function Header() {
           href="#home" 
           className="text-xl font-bold tracking-tighter"
         >
-          Jason Saputra
+          portfolio.
         </Link>
 
         {/* Desktop Nav */}
