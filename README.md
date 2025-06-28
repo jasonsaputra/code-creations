@@ -11,7 +11,7 @@ This site showcases my projects, skills, and services as a tech enthusiast passi
 
 - ⚡ Fully responsive design for all screen sizes
 - 🎨 Clean UI with smooth animations using **Framer Motion**
-- 🌙 Dark mode friendly (if applicable)
+- 🌙 Dark mode friendly
 - 💼 Project showcase with modal previews
 - 📇 About section highlighting background and interests
 - 📬 Contact section with scroll navigation
