@@ -46,7 +46,7 @@ export function Hero() {
               <span className="block mt-2">Web Developer</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              I build exceptional digital experiences that merge creativity with technical excellence.
+              I build digital solutions by blending technology with creative thinking — transforming ideas into engaging experiences.
             </p>
           </motion.div>
           
@@ -56,9 +56,9 @@ export function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
-            <Button size="lg" asChild>
+            {/* <Button size="lg" asChild>
               <a href="#projects">View My Work</a>
-            </Button>
+            </Button> */}
             <Button size="lg" variant="outline" asChild>
               <a href="#contact">Get In Touch</a>
             </Button>

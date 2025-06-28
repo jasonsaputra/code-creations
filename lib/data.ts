@@ -83,12 +83,12 @@ export const projects: Project[] = [
 export const services: Service[] = [
   {
     title: 'Frontend Development',
-    description: 'Building responsive and interactive user interfaces with modern JavaScript frameworks like React and Next.js.',
+    description: 'Crafting responsive and interactive user interfaces using modern web technologies like React and Next.js—focused on performance, accessibility, and seamless interaction.',
     icon: CodeIcon,
   },
   {
-    title: 'UI/UX Design',
-    description: 'Creating intuitive and visually appealing user experiences with a focus on usability and accessibility.',
+    title: 'Design & Creativity',
+    description: 'Designing intuitive, visually engaging digital experiences with user-centered thinking. Ensuring usability, clarity, and aesthetic consistency across platforms.',
     icon: PenToolIcon,
   },
   {
