@@ -1,28 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function Hero() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-  const calculateTranslate = (axis: 'x' | 'y', factor = 20) => {
-    const value = axis === 'x' 
-      ? (mousePosition.x / window.innerWidth - 0.5) 
-      : (mousePosition.y / window.innerHeight - 0.5);
-    return value * factor;
-  };
 
   return (
     <section 
@@ -35,19 +17,11 @@ export function Hero() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
-          className="absolute -top-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
-          animate={{
-            x: calculateTranslate('x', 30),
-            y: calculateTranslate('y', 30),
-          }}
+          className="absolute -top-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-2xl"
           transition={{ type: 'spring', damping: 50 }}
         />
         <motion.div 
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl"
-          animate={{
-            x: calculateTranslate('x', -30),
-            y: calculateTranslate('y', -30),
-          }}
+          className="absolute bottom-40 left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
           transition={{ type: 'spring', damping: 50 }}
         />
       </div>
@@ -68,8 +42,8 @@ export function Hero() {
           >
             <h2 className="text-lg md:text-xl text-primary font-medium mb-4">Hi there, I'm</h2>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="block">John Doe</span>
-              <span className="block mt-2">Creative Developer</span>
+              <span className="block">Jason Saputra</span>
+              <span className="block mt-2">Web Developer</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               I build exceptional digital experiences that merge creativity with technical excellence.
@@ -89,21 +63,21 @@ export function Hero() {
               <a href="#contact">Get In Touch</a>
             </Button>
           </motion.div>
-        </motion.div>
-        
-        {/* Scroll indicator */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.8 }}
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-        >
-          <p className="text-sm text-muted-foreground mb-2">Scroll to explore</p>
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
+
+          {/* Scroll indicator moved below buttons and made relative */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 0.8 }}
+            className="flex flex-col items-center mt-10"
           >
-            <ArrowDown className="h-5 w-5 text-primary" />
+            <p className="text-sm text-muted-foreground mb-2">Scroll to explore</p>
+            <motion.div
+              animate={{ y: [0, 20, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+            >
+              <ArrowDown className="h-5 w-5 text-primary" />
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

@@ -102,7 +102,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-medium">Location</h4>
                   <p className="text-muted-foreground">
-                    San Francisco, California
+                    Jakarta, Indonesia
                   </p>
                 </div>
               </div>

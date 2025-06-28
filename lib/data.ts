@@ -2,7 +2,7 @@ import { CodeIcon, PenToolIcon, LayersIcon, GlobeIcon } from 'lucide-react';
 
 export type Skill = {
   name: string;
-  level: number; // 0-100
+  level: number;
   category: 'frontend' | 'backend' | 'design' | 'other';
 };
 
@@ -31,13 +31,10 @@ export const skills: Skill[] = [
   { name: 'TailwindCSS', level: 85, category: 'frontend' },
   { name: 'HTML/CSS', level: 90, category: 'frontend' },
   { name: 'Node.js', level: 75, category: 'backend' },
-  { name: 'Express', level: 70, category: 'backend' },
-  { name: 'MongoDB', level: 65, category: 'backend' },
   { name: 'PostgreSQL', level: 60, category: 'backend' },
-  { name: 'UI/UX Design', level: 75, category: 'design' },
+  { name: 'UI/UX Design', level: 90, category: 'design' },
   { name: 'Figma', level: 70, category: 'design' },
   { name: 'Git', level: 80, category: 'other' },
-  { name: 'Docker', level: 60, category: 'other' },
 ];
 
 export const projects: Project[] = [
@@ -95,13 +92,13 @@ export const services: Service[] = [
     icon: PenToolIcon,
   },
   {
-    title: 'Full Stack Development',
-    description: 'Developing end-to-end solutions with integrated frontend and backend technologies.',
-    icon: LayersIcon,
-  },
-  {
     title: 'Web Application Development',
     description: 'Building custom web applications tailored to specific business needs and requirements.',
     icon: GlobeIcon,
   },
+  // {
+  //   title: '',
+  //   description: '',
+  //   icon: LayersIcon,
+  // },
 ];

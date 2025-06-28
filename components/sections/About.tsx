@@ -8,9 +8,7 @@ import { services } from '@/lib/data';
 
 export function About() {
   return (
-    <section id="about" className="py-20 md:py-32 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-background to-transparent z-10" />
-      
+    <section id="about" className="py-16 md:py-26 relative overflow-hidden">      
       <div className="container px-4 relative z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,9 +32,8 @@ export function About() {
           >
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-primary/20 to-accent/20 blur-xl opacity-70" />
-              <div className="relative aspect-square rounded-xl overflow-hidden border border-border">
-                <Image 
-                  src="https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg" 
+              <div className="relative w-30 aspect-square rounded-md overflow-hidden border border-border">                <Image 
+                  src="/images/profile.jpg" 
                   alt="Profile" 
                   layout="fill"
                   objectFit="cover"
@@ -52,29 +49,29 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-4">Creative Web Developer</h3>
+            <h3 className="text-2xl font-bold mb-4">Web Developer</h3>
             <p className="text-muted-foreground mb-6">
-              I'm a passionate web developer with over 5 years of experience creating innovative digital solutions. 
-              My journey in tech began when I built my first website at 15, and I've been hooked ever since.
+              I'm a passionate frontend developer with a strong interest in crafting intuitive and responsive web interfaces.
+              My journey in tech began during my college years, and I've been dedicated to learning and building ever since.
             </p>
             <p className="text-muted-foreground mb-6">
-              I specialize in building modern web applications using React, Next.js, and TypeScript. 
-              My approach combines technical excellence with creative problem-solving to deliver exceptional user experiences.
+              I specialize in developing modern frontend applications using React, Next.js, and TypeScript.
+              I focus on writing clean, maintainable code and creating seamless user experiences through thoughtful design and interaction.
             </p>
             
             <div className="flex flex-wrap gap-6 mb-8">
               <div>
-                <h4 className="font-bold text-lg">5+</h4>
+                <h4 className="font-bold text-lg">1+</h4>
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </div>
               <div>
-                <h4 className="font-bold text-lg">50+</h4>
+                <h4 className="font-bold text-lg">3+</h4>
                 <p className="text-sm text-muted-foreground">Projects Completed</p>
               </div>
-              <div>
+              {/* <div>
                 <h4 className="font-bold text-lg">20+</h4>
                 <p className="text-sm text-muted-foreground">Happy Clients</p>
-              </div>
+              </div> */}
             </div>
             
             <div className="flex flex-wrap gap-4">
