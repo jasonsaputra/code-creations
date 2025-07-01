@@ -51,9 +51,8 @@ export function About() {
               <div className="relative w-30 aspect-square rounded-md overflow-hidden border border-border">                <Image 
                   src="/images/profile.jpg" 
                   alt="Profile" 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-xl"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
