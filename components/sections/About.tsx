@@ -24,7 +24,7 @@ const stats: Stat[] = [
 
 export function About() {
   return (
-    <section id="about" className="py-16 md:py-26 relative overflow-hidden">      
+    <section id="about" className="py-16 md:py-28 relative overflow-hidden">      
       <div className="container px-4 relative z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,9 +51,8 @@ export function About() {
               <div className="relative w-30 aspect-square rounded-md overflow-hidden border border-border">                <Image 
                   src="/images/profile.jpg" 
                   alt="Profile" 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-xl"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
