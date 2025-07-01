@@ -37,7 +37,7 @@ export const skills: Skill[] = [
   { name: 'Git', level: 80, category: 'other' },
 ];
 
-export const projects: Project[] = [
+export const webProjects: Project[] = [
   {
     id: 'project-1',
     title: 'Cranium Property',
@@ -58,7 +58,6 @@ export const projects: Project[] = [
     link: 'https://example.com',
     github: 'https://github.com',
   },
-
   {
     id: 'project-3',
     title: 'Vehicle Management System',
@@ -76,6 +75,39 @@ export const projects: Project[] = [
     longDescription: 'A user friendly web application designed for customers to browse, search, and book vehicles for rent. Built with React.js and MUI for a sleek and modern.',
     tags: ['React', 'Redux', 'PostgreSQL', 'MUI'],
     image: '/images/ezdrive.png',
+    link: 'https://example.com',
+    github: 'https://github.com',
+  },
+];
+
+export const designProjects: Project[] = [
+  {
+    id: 'project-1',
+    title: 'Instagram Feeds',
+    description: 'Instagram content for a event organizer company',
+    longDescription: '...',
+    tags: ['Adobe Photoshop'],
+    image: '/images/feeds.jpg',
+    link: 'https://example.com',
+    github: 'https://github.com',
+  },
+  {
+    id: 'project-2',
+    title: 'Certificate',
+    description: 'Tournament Certificate',
+    longDescription: '...',
+    tags: ['Adobe Photoshop'],
+    image: '/images/e-certificate.jpg',
+    link: 'https://example.com',
+    github: 'https://github.com',
+  },
+  {
+    id: 'project-3',
+    title: 'Logo',
+    description: '...',
+    longDescription: '...',
+    tags: ['Adobe Photoshop'],
+    image: '/images/astaga-logo.jpg',
     link: 'https://example.com',
     github: 'https://github.com',
   },
