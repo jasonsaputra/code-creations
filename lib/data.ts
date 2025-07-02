@@ -37,6 +37,24 @@ export const skills: Skill[] = [
   { name: 'Git', level: 80, category: 'other' },
 ];
 
+export const services: Service[] = [
+  {
+    title: 'Frontend Development',
+    description: 'Crafting responsive and interactive user interfaces using modern web technologies like React and Next.js—focused on performance, accessibility, and seamless interaction.',
+    icon: CodeIcon,
+  },
+  {
+    title: 'Design & Creativity',
+    description: 'Designing intuitive, visually engaging digital experiences with user-centered thinking. Ensuring usability, clarity, and aesthetic consistency across platforms.',
+    icon: PenToolIcon,
+  },
+  {
+    title: 'Web Application Development',
+    description: 'Building custom web applications tailored to specific business needs and requirements.',
+    icon: GlobeIcon,
+  },
+];
+
 export const webProjects: Project[] = [
   {
     id: 'project-1',
@@ -84,8 +102,8 @@ export const designProjects: Project[] = [
   {
     id: 'project-1',
     title: 'Instagram Feeds',
-    description: 'Instagram content for a event organizer company',
-    longDescription: '...',
+    description: 'Social media designs for esports and gaming content',
+    longDescription: 'A collection of Instagram feed designs created for an event organizer.Each design was crafted to maintain visual consistency and appeal to the gaming audience.',
     tags: ['Adobe Photoshop'],
     image: '/images/feeds.jpg',
     link: 'https://example.com',
@@ -93,40 +111,22 @@ export const designProjects: Project[] = [
   },
   {
     id: 'project-2',
-    title: 'Certificate',
-    description: 'Tournament Certificate',
-    longDescription: '...',
+    title: 'Tournament Certificate',
+    description: 'Custom achievement certificate design',
+    longDescription: 'A digital certificate design. The layout emphasizes clarity, modern aesthetics, and branding consistency.',
     tags: ['Adobe Photoshop'],
-    image: '/images/e-certificate.jpg',
+    image: '/images/e-certificate.png',
     link: 'https://example.com',
     github: 'https://github.com',
   },
   {
     id: 'project-3',
-    title: 'Logo',
-    description: '...',
-    longDescription: '...',
+    title: 'Astaga Logo Design',
+    description: 'Logo design for a brand.',
+    longDescription:'A modern logo created for "ASTAGA". The design combines sharp lines and aggressive angles to convey energy and strength.',
     tags: ['Adobe Photoshop'],
     image: '/images/astaga-logo.jpg',
     link: 'https://example.com',
     github: 'https://github.com',
-  },
-];
-
-export const services: Service[] = [
-  {
-    title: 'Frontend Development',
-    description: 'Crafting responsive and interactive user interfaces using modern web technologies like React and Next.js—focused on performance, accessibility, and seamless interaction.',
-    icon: CodeIcon,
-  },
-  {
-    title: 'Design & Creativity',
-    description: 'Designing intuitive, visually engaging digital experiences with user-centered thinking. Ensuring usability, clarity, and aesthetic consistency across platforms.',
-    icon: PenToolIcon,
-  },
-  {
-    title: 'Web Application Development',
-    description: 'Building custom web applications tailored to specific business needs and requirements.',
-    icon: GlobeIcon,
   },
 ];
