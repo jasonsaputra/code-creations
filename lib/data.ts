@@ -1,27 +1,5 @@
+import { Project, Service, Skill } from '@/types';
 import { CodeIcon, PenToolIcon, GlobeIcon } from 'lucide-react';
-
-export type Skill = {
-  name: string;
-  level: number;
-  category: 'frontend' | 'backend' | 'design' | 'other';
-};
-
-export type Project = {
-  id: string;
-  title: string;
-  description: string;
-  longDescription: string;
-  tags: string[];
-  image: string;
-  link?: string;
-  github?: string;
-};
-
-export type Service = {
-  title: string;
-  description: string;
-  icon: React.ElementType;
-};
 
 export const skills: Skill[] = [
   { name: 'React', level: 90, category: 'frontend' },

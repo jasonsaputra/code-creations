@@ -5,11 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Download } from 'lucide-react';
 import { services } from '@/lib/data';
-
-type Stat = {
-  value: string;
-  label: string;
-};
+import { Stat } from '@/types';
 
 const descriptions = [
   "I'm a passionate developer with a strong interest in building intuitive and engaging digital experiences. My journey in technology started during my college years, and since then, I've been committed to continuous learning and creating meaningful projects.",
