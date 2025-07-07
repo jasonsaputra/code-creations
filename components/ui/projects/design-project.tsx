@@ -66,21 +66,15 @@ export function DesignProjects() {
                 src={currentProject.image}
                 alt={currentProject.title}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             
-            <div className="flex flex-wrap gap-2 mb-4">
-              {currentProject.tags.map(tag => (
-                <Badge key={tag} variant="secondary">{tag}</Badge>
-              ))}
-            </div>
-            
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-3">
               {currentProject.longDescription}
             </p>
             
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-end">
               {currentProject.github && (
                 <Button variant="outline" asChild>
                   <Link href={currentProject.github} target="_blank" rel="noopener noreferrer">
