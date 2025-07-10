@@ -45,7 +45,7 @@ export function About() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-primary/20 to-accent/20 blur-xl opacity-70" />
               <div className="relative w-30 aspect-square rounded-md overflow-hidden border border-border">                <Image 
-                  src="/images/profile.jpg" 
+                  src="/images/profile.jpeg" 
                   alt="Profile" 
                   fill
                   className="object-cover"
@@ -82,7 +82,7 @@ export function About() {
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="#" download>
+                <a href="/images/Resume Jason Saputra.pdf" download>
                   Download CV <Download className="h-4 w-4 ml-1" />
                 </a>
               </Button>
