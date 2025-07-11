@@ -8,7 +8,7 @@ import { services } from '@/lib/data';
 import { Stat } from '@/types';
 
 const descriptions = [
-  "I'm a passionate developer with a strong interest in building intuitive and engaging digital experiences. My journey in technology started during my college years, and since then, I've been committed to continuous learning and creating meaningful projects.",
+  "Passionate developer with a strong interest in building intuitive and engaging digital experiences. My journey in technology started during my college years, and since then, I've been committed to continuous learning and creating meaningful projects.",
   "While my main focus is developing modern frontend applications using React, Next.js, and TypeScript, I also enjoy exploring the creative side of technology—merging technical expertise with a good sense of visual design.",
 ] as string[];
 
@@ -29,7 +29,7 @@ export function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Profile</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Get to know about my background and the passion that fuels my work across technology, design, and digital innovation.
           </p>
@@ -60,7 +60,7 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-4">Web Developer</h3>
+            <h3 className="text-2xl font-bold mb-4">About me</h3>
             {descriptions.map((desc, idx) => (
               <p className="text-muted-foreground mb-6" key={idx}>
                 {desc}
