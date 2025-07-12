@@ -29,7 +29,7 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-card p-8 rounded-xl border border-border">
+            <div className="bg-card p-8 rounded-xl border border-border hover:shadow-md">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
