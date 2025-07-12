@@ -89,7 +89,7 @@ export const designProjects: Project[] = [
   },
   {
     id: 'project-2',
-    title: 'Tournament Certificate',
+    title: 'Certificate',
     description: 'Custom achievement certificate design',
     longDescription: 'A digital certificate design. The layout emphasizes clarity, modern aesthetics, and branding consistency.',
     tags: ['Adobe Photoshop'],
@@ -102,7 +102,7 @@ export const designProjects: Project[] = [
     title: 'Astaga Logo Design',
     description: 'Logo design for a brand.',
     longDescription:'A modern logo created for "ASTAGA". The design combines sharp lines and aggressive angles to convey energy and strength.',
-    tags: ['Adobe Photoshop'],
+    tags: ['Adobe Illustrator'],
     image: '/images/astaga-logo.jpg',
     link: 'https://example.com',
     github: 'https://github.com',

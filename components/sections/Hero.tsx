@@ -43,10 +43,10 @@ export function Hero() {
             <h2 className="text-lg md:text-xl text-primary font-medium mb-4">Hi there, I'm</h2>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="block">Jason Saputra</span>
-              <span className="block mt-2">Web Developer</span>
+              {/* <span className="block mt-2">Web Developer</span> */}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              I build digital solutions by blending technology with creative thinking — transforming ideas into engaging experiences.
+              Build digital solutions by blending technology with creative thinking — transforming ideas into engaging experiences.
             </p>
           </motion.div>
           
