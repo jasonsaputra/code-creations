@@ -40,13 +40,15 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="mb-6"
           >
-            <h2 className="text-lg md:text-xl text-primary font-medium mb-4">Hi there, I'm</h2>
+            <h3 className="text-2xl md:text-2xl text-primary font-bold mb-4">Hi there, I'm</h3>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="block">Jason Saputra</span>
-              {/* <span className="block mt-2">Web Developer</span> */}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600">
+                Jason Saputra
+              </span>
+                {/* <span className="block mt-2">Web Developer</span> */}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Build digital solutions by blending technology with creative thinking — transforming ideas into engaging experiences.
+              I build digital solutions by blending technology with creative thinking — transforming ideas into engaging experiences.
             </p>
           </motion.div>
           
@@ -56,9 +58,9 @@ export function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
-            {/* <Button size="lg" asChild>
+            <Button size="lg" asChild>
               <a href="#projects">View My Work</a>
-            </Button> */}
+            </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="#contact">Get In Touch</a>
             </Button>
