@@ -2,17 +2,25 @@ import { Project, Service, Skill } from '@/types';
 import { CodeIcon, PenToolIcon, GlobeIcon } from 'lucide-react';
 
 export const skills: Skill[] = [
-  { name: 'React', level: 90, category: 'frontend' },
-  { name: 'Next.js', level: 85, category: 'frontend' },
-  { name: 'TypeScript', level: 80, category: 'frontend' },
-  { name: 'JavaScript', level: 90, category: 'frontend' },
-  { name: 'TailwindCSS', level: 85, category: 'frontend' },
-  { name: 'HTML/CSS', level: 90, category: 'frontend' },
-  // { name: 'Node.js', level: 75, category: 'backend' },
-  // { name: 'PostgreSQL', level: 60, category: 'backend' },
-  { name: 'UI/UX Design', level: 90, category: 'design' },
-  { name: 'Figma', level: 70, category: 'design' },
-  { name: 'Git', level: 80, category: 'other' },
+  { name: 'React', level: 99, category: ['frontend'], logo: '/images/react.svg' },
+  { name: 'Next.js', level: 99, category: ['frontend', 'backend'], logo: '/images/next-js.svg' },
+  { name: 'JavaScript', level: 99, category: ['frontend', 'backend'], logo: '/images/javascript.svg' },
+  { name: 'Tailwind CSS', level: 99, category: ['frontend'], logo: '/images/tailwind-css.svg' },
+  { name: 'TypeScript', level: 99, category: ['frontend', 'backend'], logo: '/images/typescript.svg' },
+  { name: 'HTML5', level: 99, category: ['frontend'], logo: '/images/html-5.svg' },
+  { name: 'CSS3', level: 99, category: ['frontend'], logo: '/images/css-3.svg' },
+
+  { name: 'Figma', level: 99, category: ['design'], logo: '/images/figma.svg' },
+  { name: 'Adobe Photoshop', level: 99, category: ['design'], logo: '/images/adobe-photoshop.svg' },
+  { name: 'Adobe Premier Pro', level: 99, category: ['design'], logo: '/images/adobe-premiere-pro.svg' },
+  { name: 'Canva', level: 99, category: ['design'], logo: '/images/canva.svg' },
+
+  { name: 'Github', level: 99, category: ['other'], logo: '/images/git-hub.svg' },
+  { name: 'BitBucket', level: 99, category: ['other'], logo: '/images/bit-bucket.svg' },
+  { name: 'Visual Studio Code', level: 99, category: ['other'], logo: '/images/vs-code.svg' },
+  { name: 'Source Tree', level: 99, category: ['other'], logo: '/images/source-tree.svg' },
+  { name: 'Postman', level: 99, category: ['other'], logo: '/images/postman.svg' },
+  { name: 'Jenkins', level: 99, category: ['backend'], logo: '/images/jenkins.svg' },
 ];
 
 export const services: Service[] = [
