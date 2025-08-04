@@ -1,7 +1,10 @@
+export type SkillCategory = 'all' | 'frontend' | 'backend' | 'design' | 'other';
+
 export interface Skill {
   name: string;
-  level: number;
-  category: 'frontend' | 'backend' | 'design' | 'other';
+  logo: string;
+  level?: number;
+  category?: string[];
 };
 
 export interface Project {
