@@ -74,7 +74,7 @@ export function DesignProjects() {
               {currentProject.longDescription}
             </p>
             
-            <div className="flex gap-4 justify-end">
+            {/* <div className="flex gap-4 justify-end">
               {currentProject.github && (
                 <Button variant="outline" asChild>
                   <Link href={currentProject.github} target="_blank" rel="noopener noreferrer">
@@ -89,7 +89,7 @@ export function DesignProjects() {
                   </Link>
                 </Button>
               )}
-            </div>
+            </div> */}
           </DialogContent>
         )}
       </Dialog>
