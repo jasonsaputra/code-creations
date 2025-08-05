@@ -47,7 +47,7 @@ export function WebProjects() {
                   <Badge key={tag} variant="secondary">{tag}</Badge>
                 ))}
               </div>
-              <div className="flex gap-4">
+              {/* <div className="flex gap-4">
                 {project.github && (
                   <Link 
                     href={project.github} 
@@ -68,7 +68,7 @@ export function WebProjects() {
                     <ExternalLink className="h-5 w-5" />
                   </Link>
                 )}
-              </div>
+              </div> */}
             </div>
           </motion.div>
         ))}
@@ -96,7 +96,7 @@ export function WebProjects() {
               {currentProject.longDescription}
             </p>
             
-            <div className="flex gap-4 justify-end">
+            {/* <div className="flex gap-4 justify-end">
               {currentProject.github && (
                 <Button variant="outline" asChild>
                   <Link href={currentProject.github} target="_blank" rel="noopener noreferrer">
@@ -111,7 +111,7 @@ export function WebProjects() {
                   </Link>
                 </Button>
               )}
-            </div>
+            </div> */}
           </DialogContent>
         )}
       </Dialog>
