@@ -10,21 +10,21 @@ export const skills: Skill[] = [
   { name: 'HTML5', level: 99, category: ['frontend'], logo: '/images/html-5.svg' },
   { name: 'CSS3', level: 99, category: ['frontend'], logo: '/images/css-3.svg' },
   { name: 'Mantine', level: 99, category: ['frontend'], logo: '/images/mantine.svg' },
-  // { name: 'Wordpress', level: 99, category: ['frontend'], logo: '/images/wordpress.svg' },
-  // { name: 'Bubble', level: 99, category: ['frontend'], logo: '/images/bubble.svg' },
 
   { name: 'Figma', level: 99, category: ['design'], logo: '/images/figma.svg' },
   { name: 'Adobe Photoshop', level: 99, category: ['design'], logo: '/images/adobe-photoshop.svg' },
-  { name: 'Adobe Premier Pro', level: 99, category: ['design'], logo: '/images/adobe-premiere-pro.svg' },
   { name: 'Canva', level: 99, category: ['design'], logo: '/images/canva.svg' },
 
-  { name: 'Github', level: 99, category: ['other'], logo: '/images/github-white.svg' },
   { name: 'BitBucket', level: 99, category: ['other'], logo: '/images/bit-bucket.svg' },
   { name: 'Visual Studio Code', level: 99, category: ['other'], logo: '/images/vs-code.svg' },
   { name: 'Source Tree', level: 99, category: ['other'], logo: '/images/source-tree.svg' },
+  { name: 'Github', level: 99, category: ['other'], logo: '/images/github-white.svg' },
   { name: 'Postman', level: 99, category: ['other'], logo: '/images/postman.svg' },
   { name: 'Jenkins', level: 99, category: ['other'], logo: '/images/jenkins.svg' },
   { name: 'Notion', level: 99, category: ['other'], logo: '/images/notion-white.svg' },
+  { name: 'Wordpress', level: 99, category: ['other'], logo: '/images/wordpress.svg' },
+  { name: 'Bubble', level: 99, category: ['other'], logo: '/images/bubble.svg' },
+  { name: 'Adobe Premier Pro', level: 99, category: ['other'], logo: '/images/adobe-premiere-pro.svg' },
 ];
 
 export const services: Service[] = [

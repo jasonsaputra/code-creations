@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { skills } from '@/lib/data';
 import { SkillCategory } from '@/types';
@@ -8,12 +8,17 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
 export function Skills() {
+  const [mounted, setMounted] = useState(false);
   const [category, setCategory] = useState<SkillCategory>('all');
   const { theme } = useTheme();
 
   const filteredSkills = skills.filter(
     skill => category === 'all' || skill.category?.includes(category)
   );
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section id="skills" className="py-16 md:py-28 relative overflow-hidden">
@@ -49,16 +54,11 @@ export function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {filteredSkills.map((skill, index) => {
-            // const logo =
-            //   skill.name === 'Github'
-            //     ? theme === 'dark'
-            //       ? '/images/github-white.svg'
-            //       : '/images/github.svg'
-            //     : skill.logo;
-
             const logo = (() => {
+              if (!mounted) return skill.logo;
+            
               if (skill.name === 'Github') {
                 return theme === 'dark' ? '/images/github-white.svg' : '/images/github.svg';
               }
@@ -69,25 +69,29 @@ export function Skills() {
             })();
 
             return (
-              <motion.div
+              <div
                 key={skill.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="bg-card border border-border rounded-xl p-6 flex flex-col items-center hover:shadow-lg transition-all"
+                className="group rounded-xl p-[2px] transition-all duration-300 bg-transparent hover:bg-gradient-to-r hover:from-blue-400 hover:to-pink-600"
               >
-                <div className="w-14 h-14 flex items-center justify-center mb-4">
-                  <Image
-                    src={logo}
-                    alt={skill.name}
-                    width={50}
-                    height={50}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <h3 className="font-bold text-center">{skill.name}</h3>
-              </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className="bg-card rounded-[10px] p-6 flex flex-col items-center h-full transition-all duration-300 group-hover:shadow-xl"
+                >
+                  <div className="w-14 h-14 flex items-center justify-center mb-4">
+                    <Image
+                      src={logo}
+                      alt={skill.name}
+                      width={50}
+                      height={50}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="font-medium text-center">{skill.name}</h3>
+                </motion.div>
+              </div>
             );
           })}
         </div>
