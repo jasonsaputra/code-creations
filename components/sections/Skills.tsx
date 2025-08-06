@@ -51,13 +51,6 @@ export function Skills() {
         {/* Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
           {filteredSkills.map((skill, index) => {
-            // const logo =
-            //   skill.name === 'Github'
-            //     ? theme === 'dark'
-            //       ? '/images/github-white.svg'
-            //       : '/images/github.svg'
-            //     : skill.logo;
-
             const logo = (() => {
               if (skill.name === 'Github') {
                 return theme === 'dark' ? '/images/github-white.svg' : '/images/github.svg';
