@@ -2,7 +2,7 @@ import { Project, Service, Skill } from '@/types';
 import { CodeIcon, PenToolIcon, GlobeIcon } from 'lucide-react';
 
 export const skills: Skill[] = [
-  { name: 'React', level: 99, category: ['frontend'], logo: '/images/react.svg' },
+  { name: 'React', level: 99, category: ['frontend'], logo: '/images/react-icon.svg' },
   { name: 'Next.js', level: 99, category: ['frontend', 'backend'], logo: '/images/next-js.svg' },
   { name: 'JavaScript', level: 99, category: ['frontend', 'backend'], logo: '/images/javascript.svg' },
   { name: 'Tailwind CSS', level: 99, category: ['frontend'], logo: '/images/tailwind-css.svg' },

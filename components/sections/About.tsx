@@ -66,11 +66,11 @@ export function About() {
                 {desc}
               </p>
             ))}
-            <div className="flex flex-wrap gap-6 mb-8">
+            <div className="flex flex-wrap gap-6 mb-4">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <h4 className="font-bold text-lg">{stat.value}</h4>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  <h4 className="pl-1 font-bold text-lg">{stat.value}</h4>
+                  <p className="pl-1 text-sm text-muted-foreground">{stat.label}</p>
                 </div>
               ))}
             </div>

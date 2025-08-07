@@ -6,7 +6,7 @@ import { Mail, MapPin } from 'lucide-react';
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-28 bg-muted/30">
+    <section id="contact" className="py-16 md:py-28 ">
       <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
